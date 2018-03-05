@@ -8,6 +8,7 @@ echo "Downloading..."
 
 mkdir -p data && cd data
 wget --continue http://russellsstewart.com/s/tensorbox/inception_v1.ckpt
+wget --continue http://russellsstewart.com/s/tensorbox/resnet_v1_101.ckpt
 wget --continue http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz
 if [[ "$2" == '--load_experimental' ]]; then
     wget --continue http://download.tensorflow.org/models/inception_resnet_v2_2016_08_30.tar.gz
